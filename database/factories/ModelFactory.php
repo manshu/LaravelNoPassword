@@ -24,5 +24,6 @@ $factory->define(App\Post::class, function (Faker\Generator $faker) {
         'title' => $faker->sentence,
         'body' => $faker->paragraph,
         'active' => $faker->boolean($chanceOfGettingTrue = 50),
+        'published_at' => $faker->dateTimeBetween('-1 month', '+3 days'),
     ];
 });

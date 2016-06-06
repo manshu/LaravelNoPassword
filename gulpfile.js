@@ -16,7 +16,7 @@ elixir(function(mix) {
 });
 
 elixir(function(mix) {
-    mix.scripts('app.js');
+    mix.babel('app.js');
 });
 
 elixir(function(mix) {
@@ -25,10 +25,12 @@ elixir(function(mix) {
 
     mix.copy(npmDir + 'vue/dist/vue.js', jsDir);
     mix.copy(npmDir + 'vue-resource/dist/vue-resource.js', jsDir);
+    mix.copy(npmDir + 'vue-pagination/dist/vue-bootstrap-pagination.js', jsDir);
 
     mix.scripts([
         'vue.js',
-        'vue-resource.js'
+        'vue-resource.js',
+        'vue-bootstrap-pagination.js'
     ], 'public/js/vendor.js');
 
 });

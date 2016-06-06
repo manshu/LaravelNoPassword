@@ -6,9 +6,10 @@ Route::group(['namespace' => 'Backend'], function () {
     Route::get('logout', 'AuthController@logout');
     Route::get('auth/token/{token}', 'AuthController@authenticate');
 
-    Route::get('dashboard', function (){
-        return 'Welcome' . auth()->user()->name;
-    })->middleware('auth');
+});
+
+Route::group(['middleware' => 'auth','namespace' => 'Backend'], function () {
+    Route::get('dashboard', 'AdminController@index');
 });
 
 Route::group(['prefix' => 'api/v1', 'namespace' => 'Backend'], function()
@@ -18,6 +19,7 @@ Route::group(['prefix' => 'api/v1', 'namespace' => 'Backend'], function()
 
 Route::group(['namespace' => 'Frontend'], function()
 {
-    Route::resource('/', 'BlogController');
+    Route::get('/', 'BlogController@index');
+    
 });
 

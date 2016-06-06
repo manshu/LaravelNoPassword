@@ -5733,4 +5733,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.navbar {
+  border-radius: 0 !important; }
+
 /*# sourceMappingURL=app.css.map */

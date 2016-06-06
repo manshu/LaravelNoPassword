@@ -16,7 +16,9 @@ class CreatePostsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('body');
+            $table->string('slug')->unique();
             $table->boolean('active');
+            $table->timestamp('published_at')->index();
             $table->timestamps();
         });
     }

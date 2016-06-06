@@ -13,6 +13,7 @@ class PostsTransformer extends Transformer
         return [
             'title' => $post['title'],
             'body' => $post['body'],
+            'slug' => $post['slug'],
             'active' => (boolean) $post['active']
         ];
     }
