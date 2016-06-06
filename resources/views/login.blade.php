@@ -14,6 +14,14 @@
             <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
         </form>
+
+        @if (count($errors) > 0)
+            <div class="alert alert-danger">
+                @foreach ($errors->all() as $error)
+                        <p>{{ $error }}</p>
+                @endforeach
+            </div>
+        @endif
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.24/vue.js"></script>

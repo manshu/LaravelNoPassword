@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4e1dbae3-40b2-46fe-a031-b0ac9f86495b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/LoginToken.php" afterPath="$PROJECT_DIR$/app/LoginToken.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/login.blade.php" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" />
     </list>
     <ignored path="nopassword.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,21 +51,11 @@
       <file leaf-file-name="AuthenticatesUser.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/AuthenticatesUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+            <state relative-caret-position="494">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="e#24#79#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginToken.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/LoginToken.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -75,6 +65,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="543">
               <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/login.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -107,7 +107,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
               <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-              <folding />
+              <folding>
+                <marker date="1465182927000" expanded="true" signature="94:184" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,7 +133,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/public/css/login.css" />
-        <option value="$PROJECT_DIR$/resources/views/login.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_06_04_191541_create_login_tokens_table.php" />
@@ -167,6 +168,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/BlogController.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/LoginToken.php" />
+        <option value="$PROJECT_DIR$/resources/views/login.blade.php" />
       </list>
     </option>
   </component>
@@ -552,12 +554,12 @@
       <option name="presentableId" value="Default" />
       <updated>1465064459877</updated>
       <workItem from="1465064462324" duration="5733000" />
-      <workItem from="1465154423050" duration="20081000" />
+      <workItem from="1465154423050" duration="20480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25814000" />
+    <option name="totallyTimeSpent" value="26213000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1130" extended-state="0" />
@@ -702,14 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -781,7 +775,7 @@
         <state relative-caret-position="338">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#47#75#0#PHP" expanded="true" />
+            <element signature="e#47#75#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -880,7 +874,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
+          <folding>
+            <marker date="1465182927000" expanded="true" signature="94:184" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -956,20 +952,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/LoginToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/AuthenticatesUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        <state relative-caret-position="494">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="e#24#79#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/LoginToken.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
-          <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding />
         </state>
       </provider>
