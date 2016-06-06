@@ -27,6 +27,7 @@ class LoginToken extends Model
         Mail::raw(
             "<a href='{$url}'>{$url}</a>",
             function ($message) {
+                $message->from('noreply@auth.manshu.me');
                 $message->to($this->user->email)
                         ->subject('Login to my portal');
             }
