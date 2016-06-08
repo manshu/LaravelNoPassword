@@ -28,5 +28,5 @@
         </div>
 </div>
     @include('partials.scripts')
-    <script src="js/app.js"></script>
+    <script src="{{ url('js/app.js') }}"></script>
 @endsection

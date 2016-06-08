@@ -20,6 +20,6 @@ Route::group(['prefix' => 'api/v1', 'namespace' => 'Backend'], function()
 Route::group(['namespace' => 'Frontend'], function()
 {
     Route::get('/', 'BlogController@index');
-    
+    Route::get('{slug}', 'BlogController@show');
 });
 

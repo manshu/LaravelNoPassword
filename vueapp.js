@@ -55,4 +55,4 @@ var vm = new Vue({
         }
     }
 });
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=vueapp.js.map

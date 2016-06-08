@@ -18,6 +18,9 @@ elixir(function(mix) {
 elixir(function(mix) {
     mix.babel('app.js');
 });
+elixir(function(mix) {
+    mix.babel(['vueapp.js'],'public/js/vueapp.js');
+});
 
 elixir(function(mix) {
     var npmDir = 'node_modules/',
@@ -25,12 +28,11 @@ elixir(function(mix) {
 
     mix.copy(npmDir + 'vue/dist/vue.js', jsDir);
     mix.copy(npmDir + 'vue-resource/dist/vue-resource.js', jsDir);
-    mix.copy(npmDir + 'vue-pagination/dist/vue-bootstrap-pagination.js', jsDir);
+
 
     mix.scripts([
         'vue.js',
-        'vue-resource.js',
-        'vue-bootstrap-pagination.js'
+        'vue-resource.js'
     ], 'public/js/vendor.js');
 
 });
